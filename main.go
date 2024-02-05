@@ -22,9 +22,6 @@ func worker(id int, wg *sync.WaitGroup, done chan bool) {
 
 func main() {
 	var wg sync.WaitGroup
-	hello.Hello()
-	util.Util()
-
 	// Create a channel to signal completion
 	done := make(chan bool)
 
